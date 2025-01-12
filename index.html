@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusBuild - Gestión de Proyectos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="pantallaBienvenida">
+        <p id="b">Bienvenidos a CampusBuild</p>
+        <p></p>
+        <p></p>
+        <div class="iconosBienvenida">
+            <div class="icono">
+                <img src="https://img.icons8.com/?size=100&id=104233&format=png&color=000000" alt="Gestión de Proyectos" />
+                <p>Gestión de Proyectos</p>
+            </div>
+            <div class="icono">
+                <img src="https://img.icons8.com/?size=100&id=97511&format=png&color=000000" alt="Construcción" />
+                <p>Programación y Calendario</p>
+            </div>
+            <div class="icono">
+                <img src="https://img.icons8.com/?size=100&id=64877&format=png&color=000000" alt="Presupuesto" />
+                <p>Presupuesto</p>
+            </div>
+            <div class="icono">
+                <img src="https://img.icons8.com/?size=100&id=sRqPnYg3QRf7&format=png&color=000000" alt="Presupuesto" />
+                <p>Gestión de Recursos</p>
+            </div>
+            <div class="icono">
+                <img src="https://img.icons8.com/?size=100&id=95098&format=png&color=000000" alt="Presupuesto" />
+                <p>Comunicación y Colaboración</p>
+            </div>
+            <div class="icono">
+                <img src="https://img.icons8.com/?size=100&id=fdsDNoFBF4qC&format=png&color=000000" alt="Presupuesto" />
+                <p>Informe y Análisis</p>
+            </div>
+        </div>
+        <p></p>
+        <p></p>
+        <button id="iniciarBtn">Iniciar</button>
+    </div>
+
+    <div id="pantallaPrincipal" style="display: none;">
+        <section id="proyectos">
+            <h2>Gestión de Proyectos</h2>
+            <form id="formProyecto">
+                <label for="nombreProyecto">Nombre del Proyecto:</label>
+                <input type="text" id="nombreProyecto" required>
+
+                <label for="descripcionProyecto">Descripción:</label>
+                <textarea id="descripcionProyecto" required></textarea>
+
+                <label for="fechaInicio">Fecha de Inicio:</label>
+                <input type="date" id="fechaInicio" required>
+
+                <label for="fechaFin">Fecha de Fin:</label>
+                <input type="date" id="fechaFin" required>
+
+                <button type="submit">Crear Proyecto</button>
+            </form>
+
+            <div id="proyectosList">
+                <h3>Proyectos Actuales:</h3>
+                <ul id="listaProyectos"></ul>
+            </div>
+        </section>
+
+        <section id="programacion">
+            <h2>Programación y Calendario</h2>
+            <form id="formProgramacion">
+                <input type="text" id="tituloEvento" placeholder="Título del evento" required>
+                <input type="date" id="fechaEvento" required>
+                <textarea id="descripcionEvento" placeholder="Descripción del evento"></textarea>
+                <button type="submit">Añadir Evento</button>
+            </form>
+            <ul id="listaEventos"></ul>
+        </section>
+
+        <section id="presupuesto">
+            <h2>Seguimiento de Presupuesto</h2>
+            <form id="formPresupuesto">
+                <label for="nombreGasto">Nombre del Gasto:</label>
+                <input type="text" id="nombreGasto" required>
+
+                <label for="montoGasto">Monto:</label>
+                <input type="number" id="montoGasto" required>
+
+                <button type="submit">Registrar Gasto</button>
+            </form>
+
+            <div id="presupuestoList">
+                <h3>Gastos Registrados:</h3>
+                <ul id="listaGastos"></ul>
+            </div>
+        </section>
+
+        <section id="recursos">
+            <h2>Gestión de Recursos</h2>
+            <form id="formRecursos">
+                <label for="tipoRecurso">Tipo de Recurso:</label>
+                <select id="tipoRecurso" required>
+                    <option value="humano">Humano</option>
+                    <option value="equipo">Equipo</option>
+                    <option value="material">Material</option>
+                </select>
+
+                <label for="nombreRecurso">Nombre del Recurso:</label>
+                <input type="text" id="nombreRecurso" required>
+
+                <button type="submit">Asignar Recurso</button>
+            </form>
+
+            <div id="recursosList">
+                <h3>Recursos Asignados:</h3>
+                <ul id="listaRecursos"></ul>
+            </div>
+        </section>
+
+        <section id="comunicacion">
+            <h2>Comunicación y Colaboración</h2>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            <button id="enviarMensaje">Enviar Mensaje</button>
+
+            <div id="mensajesList">
+                <h3>Mensajes:</h3>
+                <ul id="listaMensajes"></ul>
+            </div>
+        </section>
+
+        <section id="informes">
+            <h2>Informe y Análisis</h2>
+            <button id="generarInforme">Generar Informe</button>
+
+            <div id="informe">
+                <h3>Informe del Proyecto:</h3>
+                <pre id="detalleInforme">Los detalles del informe que creaste saldrán aquí...</pre>
+            </div>
+        </section>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

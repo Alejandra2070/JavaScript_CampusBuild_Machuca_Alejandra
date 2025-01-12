@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ef78eb;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #e71dda;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #e359da;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    height: 100px;
+}
+
+#calendarioContainer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#programacion {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #f1a0eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e71dda;
+}
+
+#listaEventos {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#listaEventos li {
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#pantallaBienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 94.5vh;
+    background: linear-gradient(135deg, #e697eb, #f157ec);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#iniciarBtn {
+    padding: 16px 26px;
+    background-color: #b735b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+
+#iniciarBtn:hover {
+    background-color: #e24ad8;
+}
+
+#b{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #fff;
+    animation: typing 3s steps(30) 1s forwards, parpadeo 0.75s step-end infinite, cambioColor 4s steps(30) forwards;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes parpadeo {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@keyframes cambioColor {
+    0% {
+        color: #e697eb;
+    }
+    33% {
+        color: #d1aadf;
+    }
+    66% {
+        color: #a3d9e2;
+    }
+    100% {
+        color: #9c3799;
+    }
+}
+
+.iconosBienvenida {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.icono {
+    text-align: center;
+}
+
+.icono img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.icono img:hover {
+    transform: scale(1.2);
+}
+
+.icono p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+}
